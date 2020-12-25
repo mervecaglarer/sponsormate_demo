@@ -1,0 +1,178 @@
+{% load static %}
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sponsormate Demo</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{% static 'libs/bootstrap4/css/bootstrap.css' %}">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light p-4" style="background-color: #fcfcfc;">
+                <a class="navbar-brand" href="#">Sponsormate</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#what">Nedir?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howitworks">Nasıl Çalışır?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#demo">Demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+<!-- HEADER -->
+<!-- CONTENT -->
+
+        <section id="cover">
+            <div class="container-fluid pl-5 pr-5">
+                <div class="row">
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="cover-text d-flex flex-column justify-content-center">
+                            <h1>SPONSORMATE</h1>
+                            <h5>
+                                Yapay Zeka ve Derin Öğrenme Destekli <br> Sponsor EşleştirmeOtomasyonu
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{% static 'img/cover.png' %}" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="what">
+            <h2 class="text-center">Sponsormate Nedir?</h2>
+            <div class="container-xl pl-5 pr-5 mt-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">
+                            Dünyada ve ülkemizde birçok etkinlik veya proje planlanmaktadır. Planlanan etkinlik ve projelerden sadece küçük bir kısmı hayata geçirilebilmektedir. Hayata geçemeyen bu etkinlik ve projelerin en büyük ortak noktası ise gerek duyulan ihtiyaçları karşılamak için sponsor desteğinin bulunmamasıdır. Bu sorun genel olarak etkinlik veya proje sahiplerinin doğru firmalara veya kişilere ulaşamamasından veya firmaların aslında onlara getirisi olmayacak etkinlik veya projelere sponsor olup sponsor kotalarını doldurmasından kaynaklıdır. 
+                        </p>
+                        <p class="text-center">
+                            Sponsormate bu gibi sorunları veri madenciliği ve yapay zeka algoritmaları ile en aza indirmek için geliştirilmeye başlanmış bir otomasyon projesidir. Sponsormate firmaların sponsorluk davranışlarını inceleyerek etkinlik sahiplerine onlara sponsor olmaları daha yüksek olan firmaları önermeye çalışır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="howitworks">
+            <h2 class="text-center">Sponsormate Nasıl Çalışır?</h2>
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <i class="fas fa-database"></i>
+                        <h6>Veri Toplama</h6>
+                        <p>
+                            Yapılan bazı çalışmalar sonucunda, birçoğu üniversite toplulukları tarafından düzenlenen etkinliklerin verileri toplandı.
+                            Araç kullanıldıkça veriler toplanmaya da devam edecek.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-calendar-day"></i>
+                        <h6>Yeni Etkinlik</h6>
+                        <p>
+                            Bir etkinlik düzenlenirken otomasyon il, etkinlik türü, etkinlik sektörü, etkinlik alanı (uluslararası, yerel), katılımcı sayısı ve etkinliğin kaç yıldır düzenlendiği gibi veriler isteyecek.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-cogs"></i>
+                        <h6>Yapay Zeka</h6>
+                        <p>
+                            Otomasyonda bulunan yapay zeka algoritması yeni gelen etkinlik verisini önceki etkinlikler ile karşılaştıracak, burada birden fazla yapay zeka karşılaştırılması çalışmaktadır. Sonuçlardaki benzerlik olasılıklarına göre en uygun firma çeşitleri seçilecektir.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-cogs"></i>
+                        <h6>Önerme</h6>
+                        <p>
+                            Algoritmadan gelen firma çeşitleri olasılıklarına göre sırayla etkinlik sahibine önerilecektir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo">
+            <h2 class="text-center">Demo Fromu</h2>
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">
+                            Sistemin kayıt işlemleri henüz hazır olmadığı için, ve toplanan verilerin sahiplerinden izin alınmadığı için, veriler ve sonuçlar isim paylaşılmadan yapılacaktır. 
+                            <br>
+                            Aşağıdaki formu uygun şekilde doldurunuz.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <form action = "" method = "post" class="d-flex flex-column">
+                                {% csrf_token %} 
+                                {% for field in form %}
+                                    {% if forloop.counter0|divisibleby:2  == 1 %}
+                                        <div class="form-row">
+                                    {% endif %}
+                                    <div class="form-group col-md-6">
+                                        {{ field.label }}
+                                        {{ field }}
+                                    </div>
+                                    {% if forloop.counter0|divisibleby:2 == 0 %}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                                <button type="submit" class="btn btn-info ml-auto mr-auto">Gönder</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        Copyright © 2020 Tüm Hakları Saklıdır
+                    </div>
+                    <div class="col-md-12">
+                        illüstrasyon: <a href="https://www.freepik.com/vectors/people">People vector created by vectorjuice - www.freepik.com</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <!-- Jquery Additional -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- Bootstrap Js -->
+        <script src="{% static 'libs/bootstrap4/js/bootstrap.js' %}"></script>
+        <!-- Custom Js -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
