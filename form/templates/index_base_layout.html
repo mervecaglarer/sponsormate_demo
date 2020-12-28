@@ -147,9 +147,25 @@
                                 {% endfor %}
                                 <button type="submit" class="btn btn-info ml-auto mr-auto">Gönder</button>
                             </form>
+                            {{ testData }}
                         </div>
                     </div>
                 </div>
+                {% if recommends %}
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container">
+                            <p>!!!Bu alanda önerme işlemi sonucunda önerilen firmalar yer almaktadır. Firmalardan isimlerini kullanmak için izin alınmadığı için onların yerine gruplandırılmış isimler kullanılmıştır.</p>
+                            <h5>:Önermeler:</h5>
+                            <ul>
+                                {% for recommend in recommends %}
+                                <li>{{ recommend }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
             </div>
         </section>
 
